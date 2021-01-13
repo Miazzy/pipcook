@@ -94,5 +94,9 @@ import devPlugin from '../actions/dev-plugin';
     .command('job', 'operate the job bound to specific pipeline')
     .command('pipeline', 'operate on pipeline');
 
+  program
+    .command('lib')
+    .description("add essential libs and deps for pipcook");
+
   program.parse(process.argv);
 })();
